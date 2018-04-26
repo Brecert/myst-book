@@ -1,0 +1,15 @@
+{
+    "gitbook": "3.x.x",
+    "links": {
+        "contributePrefix": "https://github.com/brecert/myst-book/"
+    },
+    "plugins": [
+        "edit-link"
+    ],
+    "pluginsConfig": {
+        "edit-link": {
+            "base": "https://github.com/brecert/myst-book/edit/master",
+            "label": "Edit This Page"
+        }
+    }
+}

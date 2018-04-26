@@ -1,0 +1,8 @@
+{
+  "name": "myst-book",
+  "version": "1.0.0",
+  "repository": "github:brecert/myst-book",
+  "devDependencies": {
+    "gitbook-plugin-ga": "^1.0.1"
+  }
+}

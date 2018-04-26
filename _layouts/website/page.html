@@ -1,0 +1,76 @@
+{% extends template.self %}
+
+{% block body %}
+    {% block top_menu_bar %}
+    <style>
+      :root {
+        --root-blue: #4f7f93;
+        --darker-blue: #243942;
+        --dark-blue: #2d4752;
+        --mid-dark-blue: #4d7180;
+        --mid-light-blue: #9fbac7;
+        --light-blue: #c8d8de;
+        --ultra-light-blue: #f2f6f7;
+        --dark-gray: #494e50;
+        --gray: #798286;
+        --light-gray: #c9cdcf;
+        --lighter-gray: #f1f3f3;
+        --text-color: var(--dark-blue);
+        --header-color: var(--mid-light-blue);
+        --border-color: var(--root-blue);
+        --hover-color: var(--ultra-light-blue);
+        --invert-color: var(--lighter-gray);
+        --invert-muted-color: var(--mid-light-blue);
+        --invert-bg-color: var(--dark-blue);
+        --invert-header-bg-color: var(--darker-blue);
+        --invert-hover-color: var(--mid-dark-blue);
+        --invert-border-color: var(--mid-dark-blue);
+        --muted-color: var(--mid-light-blue);
+        --muted-bg-color: var(--light-blue);
+        --code-color: var(--mid-dark-blue);
+        --code-bg-color: var(--ultra-light-blue);
+        --font-size: 16px;
+        --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-condensed: 'IBM Plex Sans Condensed', -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-monospace: 'IBM Plex Mono', monospace, monospace;
+        --line-height: 1.8em;
+        --line-height-condensed: 1.3em;
+        --spacing-0u: 4px;
+        --spacing-1u: 8px;
+        --spacing-2u: 16px;
+        --spacing-4u: 32px;
+        --spacing-8u: 64px;
+        --border-radius: 2px;
+        --transition-fast: 0.07s all ease-in;
+        --animation-speed: 1.2s;
+        --bezier-accel: cubic-bezier(0.61, 0.18, 0.63, 0.64);
+      }
+      #book-search-input {
+        background-color: var(--invert-header-bg-color);
+      }
+      #book-search-input input, #book-search-input input:focus, #book-search-input input:hover {
+        color: var(--invert-color);
+      }
+      pre {
+        border-left: 3px solid var(--border-color) !important;
+        background: var(--code-bg-color) !important;
+        color: var(--code-color) !important;
+      }
+      .book-body {
+        color: var(--text-color);
+        line-height: var(--line-height);
+        font-size: var(--font-size);
+      }
+      /*background-color: var(--invert-header-bg-color);*/
+      .book-summary {
+        background-color: var(--invert-bg-color);
+        color: var(--invert-color);
+      }
+      .book-summary ul.summary li a, .book-summary ul.summary li span {
+        color: var(--invert-color);
+      }
+    </style>
+    {% endblock %}
+    {{ super() }}
+    
+{% endblock %}
